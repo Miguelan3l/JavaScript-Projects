@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Pikachu</title>
+        <link rel="stylesheet" href="css/one_page_website.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./JavaScript/onepage.js"></script>
+
+        <LLERY charset="utf-8">
+    </head>
+<body>
+
+        <!--NAV-->
+		<div>
+			<div class="nav">
+				<ul>
+                    <a href="#home"id="link"><li>HOME</li></a>
+                    <a href="#picture"><li>Picture<li></a>
+                    <a href="#video"><li>Video<li></a>
+                    <a href="#contact"><li>Contact<li></a>         
+				</ul>
+			</div>
+		</div>
+        <!--END NAV -->
+        
+        <!--HOME -->
+		<div id="home" class="font" >
+			<div>
+				<div>
+                    <span><u>Pikachu</u></span>
+                    <P> This website is all about pikachu!<p>
+				</div>
+			</div>
+		</div>
+        <!--END HOME -->
+        
+        <!-- Picture of pikachu Lightbox-->
+		<section>
+            <div id="picture" class="row">
+                <div class="column">
+                  <img src="./images/pickachu.png" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width: 75%; height: 75%;" > 
+                </div>
+                <div class="column">
+                  <img src="./images/pikachu1.png" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width: 75%; height: 75%;">
+                </div>
+                <div class="column">
+                  <img src="./images/pikacu2.png" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width: 75%; height: 75%;">
+                </div>
+                <div class="column">
+                  <img src="./images/pikacu4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width: 75%; height: 75%;" > 
+                </div>
+              </div>
+              
+              <!-- The Modal/Lightbox -->
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./images/pickachu.png" style="width:50%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./images/pikachu1.png" style="width:50%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./images/pikacu2.png" style="width:50%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./images/pikacu4.png" style="width:50%">
+                  </div>
+              
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+                  <!-- Thumbnail image controls -->
+                  <div class="column">
+                    <img class="pik" src="./images/pickachu.png" onclick="currentSlide(1)" alt="pickachu waving" style="width: 75%; height: 75%;">
+                  </div>
+              
+                  <div class="column">
+                    <img class="pik" src="./images/pikachu1.png" onclick="currentSlide(2)" alt="pickachu sitting" style="width: 75%; height: 75%;">
+                  </div>
+              
+                  <div class="column">
+                    <img class="pik" src="./images/pikacu2.png" onclick="currentSlide(3)" alt="pickachu mad at his trainer" style="width: 75%; height: 75%;" >
+                  </div>
+              
+                  <div class="column">
+                    <img class="pik" src="./images/pikacu4.png" onclick="currentSlide(4)" alt="pickachu drinking water" style="width: 75%; height: 75%;">
+                  </div>
+                </div>
+              </div>
+                </section>            
+                    <!--End of pikachu Lightbox -->	
+                    
+        <!--Video of pickachu-->     
+        <section>
+            <div id="video" class="font">
+                <h2><b><u>Pikachu Fighting!</b></u></h2>
+                <p>Here is a video of pikachu in a battle agiast another pokemon!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nKodAXaLll0" title="picture"></iframe>
+            </div>
+        </section> 
+        <!--END OF VIDEO-->    
+        
+        <!--contact-->
+        <section>
+            <div id="contact" class="font">  
+                <h2>For more information on pikachu, Please submit you information.</h2>
+            <form action="" method="post">
+                <input class="rsvp" type="text" value="First Name">
+                <input class="rsvp" type="text" value="Last Name">
+                <input class="rsvp" type="text" value="Email Address">
+                    <div class="form-spacer">
+                    <label>Terms and Conditions</label> 
+                    </div>
+                </div> 
+                <div class="submit" > 
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </section>
+        <!--End of contact-->
+
+         <!--footer-->
+        <h1>Creater of website</h1>
+    <footer>
+        <p>Author:miguel<br>
+    </footer>
+        <!--END footer-->
+</body>
+</html>

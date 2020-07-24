@@ -10,3 +10,12 @@ function myFunction () {
     sentence += "a lot from this book!";
     document.getElementById("concatenate").innerHTML=sentence;
 }
+
+
+function greet () {
+    var a="Hello";
+    var name=" Miguel!";
+    var result = a.fontcolor("red") + name.fontcolor("red");
+    document.getElementById("greet").innerHTML=result;
+
+}
